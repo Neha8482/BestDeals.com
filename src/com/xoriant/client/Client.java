@@ -295,8 +295,7 @@ public class Client {
 		Hotel hotel= guestDao.getHotelById(hotelId);
 		ModelAndView modelAndView = new ModelAndView("Booking");
 		modelAndView.addObject("hotel",hotel);
-		return modelAndView;
-		
+		return modelAndView;	
 	}
 
 	@RequestMapping(value="/bookingSuccessful",method=RequestMethod.POST)
